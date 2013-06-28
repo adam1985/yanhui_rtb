@@ -1,0 +1,26 @@
+.resize-text,.resize-input {
+    overflow: hidden;
+    resize: none;
+}
+.text-handler {
+    position: absolute;
+    right: 3px;
+    bottom: 3px;
+    width: 8px;
+    height: 8px;
+    background: url(resize.png) no-repeat;
+    overflow: hidden;
+    outline:none
+}
+
+.se-resize{
+   cursor: se-resize
+}
+
+.e-resize{
+    cursor: e-resize
+}
+
+.s-resize{
+    cursor: s-resize
+}

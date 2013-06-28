@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Drag And Drop</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--<script type="text/javascript" src="base.js"></script>-->
+<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="dnd.js"></script>
+<link rel="stylesheet" type="text/css" href="base.css" />
+</head>
+<body>
+<h1>Drag And Drop</h1>
+<div id="rangeDiv">
+	<div id="oDiv">
+		<h3 class="handle">浮动窗口</h3>
+	</div>
+</div>
+<script type="text/javascript">
+    $("#oDiv").DND({
+        handle : '.handle',
+        className :"moving",
+        range: '#rangeDiv',
+        direction : {
+           isLeft : true,
+           isTop : true
+        },
+        onMove:function ( offset ) {
+            //return false;
+        }
+        //mode:"H"//H表示仅水平拖动，V表示仅垂直拖动，没有提供表示两个方向都可拖动
+    });
+
+</script>
+</body>
+</html>

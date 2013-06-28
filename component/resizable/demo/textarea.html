@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Drag And Drop</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="base.js"></script>
+<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="dnd.js"></script>
+<script type="text/javascript" src="resizable.js"></script>
+<link rel="stylesheet" type="text/css" href="base.css" />
+    <link rel="stylesheet" type="text/css" href="resizable.css" />
+    <style>
+        textarea{
+            display: block;
+            width: 200px;
+            height: 100px;
+        }
+        input{
+            width: 100px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+<textarea class="resize-text">
+    在w3school，你可以找到你所需要的所有的网站建设教程。
+</textarea>
+<input type="text" value="11111" class="resize-input" />
+<script type="text/javascript">
+    $('.resize-text').resizable();
+
+    $('.resize-input').resizable({
+        isBottom : false,
+        cursor : 'e-resize'
+    });
+
+</script>
+</body>
+</html>
