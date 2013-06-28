@@ -1,6 +1,7 @@
 /**
  * @fileoverview 项目入口bootstrap
  * @name index
+ * @class index
  * @module huiyan.index
  *
  */
